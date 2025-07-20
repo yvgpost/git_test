@@ -69,6 +69,40 @@ let k = 4 > 3;
 console.log(k);
 
 k = 5 > 6;
-
 console.log(k);
 
+let age = null;
+console.log(age);
+
+let myage;
+console.log(myage);
+
+console.log(typeof z);
+
+let string = "Hello world!";
+console.log(string);
+
+const badString = string;
+console.log(badString);
+
+let somename = "Cris";
+let hisname = `My name is ${somename}!`;
+console.log(hisname);
+
+const firstPart = "Hello, ";
+const secondPart = "my name is ";
+const thirdPart = "Cris!";
+const full = `${firstPart}${secondPart}${thirdPart}`;
+console.log(full);
+
+
+const button = document.querySelector("button");
+
+function greet() {
+    const ame = prompt("What is your name?");
+    const greeting = document.querySelector("#greeting");
+    greeting.textContent = `Hello ${ame}, it is nice to see you!`;
+    console.log(ame);
+};
+
+button.addEventListener ("click", greet);
