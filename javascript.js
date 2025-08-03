@@ -106,3 +106,89 @@ function greet() {
 };
 
 button.addEventListener ("click", greet);
+
+const string1 = "Hi there!";
+const string2 = 'Hello';
+const string3 = `Hello again`;
+const string4 = new String('Hello world, like an object');
+
+console.log(string1);
+console.log(string2);
+console.log(string3);
+console.log(string4);
+console.log("Hello"[0]);
+
+const myString = "string";
+console.log(myString);
+
+const reallyBadString = myString;
+console.log(reallyBadString);
+
+let whatIsTextLenght = reallyBadString.length;
+console.log(whatIsTextLenght);
+
+console.log(myString[0]);
+
+console.log(string1.concat(' ',string2));
+
+const stringSlice = "How are How you doing today?";
+console.log(stringSlice.replace(/HOW/ig, "What"));
+
+let insertText = "I love all dogs and cats";
+insertText = "I don`t like Cats, cAts, caTs and dogs, dogs, dogs!";
+
+insertText = insertText.replaceAll(/cats/ig, "fruits");
+insertText = insertText.replaceAll("dogs", "vegetables");
+
+document.getElementById("demo").innerHTML = insertText;
+
+console.log(2 == 2);
+
+let result = 2 > 2;
+
+if (result) {
+    document.getElementById("demo").innerHTML = "if is true";
+} else if (result = 2 == 4) {
+    document.getElementById("demo").innerHTML = "if else is true";
+} else {
+    document.getElementById("demo").innerHTML = "else is true";   
+}
+
+let text;
+
+if (Math.random() > 0.5) {
+    text = "Hello!";
+    document.getElementById("demo").innerHTML = text;   
+} else {
+    text = "Buy!";
+    document.getElementById("demo").innerHTML = text;   
+}
+
+let hour = 9;
+if (hour >= 9 && hour <= 18) {
+    console.log("The office is open");
+}
+
+let username = prompt("Who are you?");
+if (username === "Admin") {
+    let password = prompt("What`s the password?");
+    if (password === "TheMaster") {
+        alert("Welcome!");
+    } else {
+        alert("Wrong password!");
+    }
+} else {
+    alert("I don`t know you!")
+}
+
+let cheese = "";
+
+if (cheese) {
+  console.log("Yay! Cheese available for making cheese on toast.");
+} else {
+  console.log("No cheese on toast for you today.");
+}
+
+
+
+
